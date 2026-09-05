@@ -1,0 +1,14 @@
+{
+  "name": "Skincare",
+  "short_name": "Skincare",
+  "description": "Cilt bakım rutini takibi / Skincare routine tracker",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFF6FC",
+  "theme_color": "#FFF6FC",
+  "lang": "tr",
+  "icons": [
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

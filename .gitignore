@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Build outputs (regenerate with `python3 build.py` and `macos/build.sh`)
+build/
+dist/
+
+# Scratch
+img/_sheet.html
+*.raw
