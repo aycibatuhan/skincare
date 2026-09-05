@@ -1,4 +1,4 @@
-const CACHE = 'skincare-v11';
+const CACHE = 'skincare-v12';
 const ASSETS = ['./', './index.html', './styles.css', './data.js', './i18n.js', './app.js', './manifest.json', './icon.svg', './icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));

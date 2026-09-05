@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Skincare — tek dosyalık dağıtım üretir:
   dist/skincare.html     → tam sayfa, çevrimdışı açılabilir (Dosyalar'dan Safari ile aç, ana ekrana ekle)
-  dist/artifact.html     → Claude Artifact için gövde parçası (doctype/head yok)
 """
 import os, re
 root = os.path.dirname(os.path.abspath(__file__))
@@ -29,9 +28,9 @@ full = f"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FFF6FC">
+<meta name="theme-color" content="#70702E">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Rutin">
+<meta name="apple-mobile-web-app-title" content="Skincare">
 <link rel="icon" href="{icon_uri}">
 <link rel="apple-touch-icon" href="{icon_uri}">
 <title>Skincare</title>
@@ -45,13 +44,4 @@ full = f"""<!doctype html>
 </html>
 """
 open(os.path.join(root, 'dist', 'skincare.html'), 'w', encoding='utf-8').write(full)
-
-artifact = f"""<title>Skincare</title>
-{head_script}
-<style>
-{css}
-</style>
-{body}{inline_js}
-"""
-open(os.path.join(root, 'dist', 'artifact.html'), 'w', encoding='utf-8').write(artifact)
-print('dist/skincare.html', len(full), 'bytes;', 'dist/artifact.html', len(artifact), 'bytes')
+print('dist/skincare.html', len(full), 'bytes')

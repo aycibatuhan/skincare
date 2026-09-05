@@ -840,7 +840,7 @@ setInterval(() => { if (todayStr() !== lastDay) { lastDay = todayStr(); ui.logDa
 document.addEventListener('visibilitychange', () => { if (!document.hidden) render(); });
 
 /* PWA */
-if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol) && !location.hostname.includes('claude')) {
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
 }
 

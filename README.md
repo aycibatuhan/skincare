@@ -36,7 +36,7 @@ then open `http://localhost:8765/`.
 ## Build
 
 ```bash
-python3 build.py      # dist/skincare.html (single file, images inlined) + dist/artifact.html
+python3 build.py      # dist/skincare.html (single file, images inlined)
 macos/build.sh        # build/Skincare.app + build/Skincare-<version>.dmg
 ```
 
@@ -104,7 +104,7 @@ sonra `http://localhost:8765/` adresini aç.
 ## Derleme
 
 ```bash
-python3 build.py      # dist/skincare.html (tek dosya, görseller gömülü) + dist/artifact.html
+python3 build.py      # dist/skincare.html (tek dosya, görseller gömülü)
 macos/build.sh        # build/Skincare.app + build/Skincare-<sürüm>.dmg
 ```
 
